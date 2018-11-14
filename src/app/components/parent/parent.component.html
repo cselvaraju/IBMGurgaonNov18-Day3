@@ -1,0 +1,10 @@
+<div class="container">
+  <h4>Parent Component</h4>
+  <input type="text" [(ngModel)]="parentValue">
+  <br>
+  Child count value is {{childCount}}
+  <app-child 
+    dataFromParent="{{parentValue}}"
+    (countChanged)="getChildCount($event)">
+  </app-child>
+</div>

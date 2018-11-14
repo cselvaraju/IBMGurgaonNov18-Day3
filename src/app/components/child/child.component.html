@@ -1,0 +1,19 @@
+<div class="container">
+  <h4>Child Component</h4>
+  Data from parent: 
+  <span>
+    {{dataFromParent}}
+  </span>
+  <p></p>
+  <div class="card">
+    <div class="card-body">
+      Child Counter Value is {{counter}}
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="incrementCount()">
+    <i class="fa fa-plus"></i>
+  </button>
+  <button class="btn btn-primary" (click)="decrementCount()">
+    <i class="fa fa-minus"></i>
+  </button>
+</div>
